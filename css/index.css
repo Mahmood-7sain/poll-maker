@@ -1,0 +1,312 @@
+
+html{
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(0,138,255);
+    background: radial-gradient(circle, rgba(0,138,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1024px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.header-container{
+    position: fixed;
+    width: 1024px;
+    top: 0;
+}
+
+
+/* Header style */
+header {
+    background-color: black;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+/* End of header style */
+
+
+/* Logo style */
+.logo {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-align: center;
+}
+.logo1{
+    width: 150px;
+    margin: 0px auto;
+    text-align: center;
+}
+.toIndex{
+    text-decoration: none;
+}
+.poll {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 0;
+}
+
+.maker {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-top: 0;
+}
+/* End of logo style */
+
+/* Navbar1 style */
+header .nav1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+header .nav1 a {
+    margin-right: 15px;
+    color: white;
+}
+
+header .nav1 .myButton1 {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton1:hover {
+    background-color: white;
+    color: black;
+}
+
+header .nav1 .myButton {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+/* End of navbar1 style */
+
+/* Navbar2 style */
+.nav2 {
+    background-color: #f5f5f5d1;
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.nav2 a {
+    color: black;
+    margin-top: 15px;
+    /* margin-left: 80px; */
+    padding: 12px 50px;
+    background: none;
+    border: none;
+}
+
+
+.nav2 a:hover {
+    transition-duration: 1s;
+    color:blue;
+    border-bottom: 3px solid blue;
+}
+/* End of navbar2 */
+
+.myPollLogIn a:hover{
+    color:red;
+}
+.myPollLogIn {
+    text-decoration:underline;
+}
+
+.allpollBoxes {
+    /* min-height: 500px; */
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 125px;
+    padding-top: 200px;
+}
+
+.allpollBoxes a{
+    display: contents;
+    color:black;
+
+}
+.pollBoxes {
+    background-color: rgb(255 255 255 / 80%);
+    width: 45%;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px white;
+    font-size: 28px;
+}
+.pollBoxes:hover{
+    box-shadow: 0 0 5px black;
+}
+
+.pollBoxOwner {
+    font-size: 22px;
+}
+
+
+/* Hamburger menu styles */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 55px;
+    color: white;
+
+}
+
+
+@media(max-width:768px) {
+
+
+    .burger-icon {
+        margin-right: 15px;
+        margin-left: 800px;
+        display: block;
+    }
+
+    .nav1 {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav1.active {
+        min-height: 320px;
+        right: 300px;
+        background-color: rgb(0 0 0 / 90%);
+        display: flex;
+        position: relative;
+        top: 246px;
+    }
+    header .nav1 .myButton1, header .nav1 .myButton {
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px solid white;
+        padding: 10px 100px;
+        font-size: 34px;
+    }
+
+
+
+    header{
+        max-height: 135px;
+    }
+    .nav2 a {
+        padding: 5px 50px;
+    }
+    .nav2{
+        font-size: 31px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .allpollBoxes{
+        justify-content: space-around;
+        padding-top: 230px;
+    }
+    .pollBoxes{
+        font-size: 35px;
+        width:90%;
+        min-height: 225px;
+    }
+    .pollBoxOwner {
+        font-size: 33px;
+    }
+  
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .footer-col h4 {
+        font-size: 30px;
+        color: black;
+    }
+
+    .footer-col ul li a {
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+@media(max-width:500px) {
+    header{
+        max-height: 150px;
+    }
+
+    header .nav1 {
+        font-size: 40px;
+    }
+    .nav2 {
+        padding: 16px;
+        min-height: 40px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+
+    .logo {
+        font-size: 24px;
+    }
+    .nav1.active {
+        top: 250px;
+    }
+    .allpollBoxes{
+        padding-top: 260px;
+    }
+    .pollBoxes {
+        font-size: 45px;
+        width: 90%;
+    }
+    .pollBoxOwner {
+        font-size: 40px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 40px;
+    }
+
+    .footer-col ul li a {
+        font-size: 2rem;
+    }
+}

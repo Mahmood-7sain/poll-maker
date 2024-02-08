@@ -1,0 +1,386 @@
+html{
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(0,138,255);
+    background: radial-gradient(circle, rgba(0,138,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-bottom: 50px;
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#con{
+    padding-top: 94px;
+}
+
+
+/* Header style */
+header {
+    position: fixed;
+    width: 1024px;
+    top: 0;
+    background-color: black;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+/* End of header style */
+
+
+/* Logo style */
+.logo {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-align: center;
+}
+.logo1{
+    width: 150px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.poll {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 0;
+}
+
+.maker {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-top: 0;
+}
+/* End of logo style */
+
+/* Navbar1 style */
+header .nav1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+header .nav1 a {
+    margin-right: 15px;
+    color: white;
+}
+
+header .nav1 .myButton1 {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton1:hover {
+    background-color: white;
+    color: black;
+}
+
+header .nav1 .myButton {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 55px;
+    color: white;
+
+}
+/* End of navbar1 style */
+
+span {
+    padding-top: 10px;
+    display: block;
+    color: red;
+    font-size: 23px;
+    width: 100%;
+    text-align: left;
+    line-height: 11px;
+}
+
+#sp1,
+#sp2 {
+    display: inline;
+}
+
+.end-date-optional small {
+    display: block;
+    font-size: 21px;
+    opacity: 0.7;
+}
+
+#end_date {
+    font-size: 20px;
+    background-color: #f7f7f7;
+}
+
+#customAlert {
+    margin: 0px 0 10px 0;
+    padding: 0 0 0 10px;
+    border: 1px solid #d2d1db;
+    color: #2f66a1;
+    background-color: #cce5ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#customAlert p {
+    margin: 12px 0px;
+}
+
+#customAlert button {
+    margin: auto 0px;
+    background: none;
+    border: none;
+}
+
+form {
+    background-color: #f1f1f1eb;
+    box-shadow: 0 0 10px black;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 60px auto 50px auto;
+    width: 80%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#create-poll-form{
+    padding-top: 20px;
+}
+
+.bx {
+    margin-bottom: 45px
+}
+
+.input-text {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 23px;
+}
+
+.myInput {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    max-width: 95%;
+    justify-content: space-between;
+    display: flex;
+    height: 45px;
+    border: 1px solid;
+}
+
+div button img {
+    width: 20px;
+}
+
+.myInput:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.myInput button {
+    border: none;
+    background: none;
+}
+
+.addOption {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.addOption:hover {
+    box-shadow: 0px 0px 2px black;
+}
+.addOption:active {
+    background-color: white;
+}
+
+.m-bottom {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: inline-block;
+}
+
+.sbt {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sbt:hover {
+    background-color: #45a049;
+
+}
+.sbt:active {
+    cursor: pointer;
+    background-color: #5db160;
+}
+
+@media(max-width:768px) {
+
+
+
+    .burger-icon {
+        margin-right: 15px;
+        margin-left: 800px;
+        display: block;
+    }
+
+    .nav1 {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav1.active {
+        min-height: 320px;
+        right: 276px;
+        background-color: rgb(0 0 0 / 90%);
+        display: flex;
+        position: relative;
+        top: 241px;
+    }
+    header .nav1 .myButton1, header .nav1 .myButton {
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px solid white;
+        padding: 10px 100px;
+        font-size: 34px;
+    }
+
+
+    header{
+        max-height: 135px;
+    }
+
+    span{
+        font-size: 30px;
+    }
+    form {
+        min-height: 880px;
+        width: 90%;
+        font-size: 40px;
+        margin: 110px auto 50px auto;
+    }
+
+    .myInput {
+        height: 70px;
+    }
+
+    .input-text {
+        font-size: 30px;
+    }
+
+    .addOption {
+        font-size: 28px;
+    }
+
+    .end-date-optional small {
+        font-size: 30px;
+    }
+
+    #end_date {
+        font-size: 28px;
+    }
+
+    .sbt {
+        padding: 15px 30px;
+        font-size: 25px;
+    }
+
+    div button img {
+        width: 30px;
+    }
+}
+
+@media(max-width:500px) {
+    header{
+        max-height: 150px;
+    }
+    header .nav1 {
+        font-size: 40px;
+    }
+    .nav1.active {
+        top: 249px;
+    }
+    span{
+        font-size: 35px;
+    }
+
+    form {
+        height: 1200px;
+        width: 90%;
+        font-size: 45px;
+    }
+
+    .myInput {
+        height: 100px;
+    }
+
+    .input-text {
+        font-size: 40px;
+    }
+
+    .addOption {
+        font-size: 40px;
+    }
+
+    .end-date-optional small {
+        font-size: 37px;
+    }
+
+    #end_date {
+        font-size: 36px;
+    }
+
+    .sbt {
+        padding: 15px 30px;
+        font-size: 36px;
+    }
+
+    div button img {
+        width: 40px;
+    }
+}

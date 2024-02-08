@@ -1,0 +1,305 @@
+
+html{
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(0,138,255);
+    background: radial-gradient(circle, rgba(0,138,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* Header style */
+header {
+    position: fixed;
+    width: 1024px;
+    top: 0;
+    background-color: black;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+/* End of header style */
+
+
+/* Logo style */
+.logo {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-align: center;
+}
+.logo1{
+    width: 150px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.poll {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 0;
+}
+
+.maker {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-top: 0;
+}
+/* End of logo style */
+
+/* Navbar1 style */
+header .nav1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+header .nav1 a {
+    margin-right: 15px;
+    color: white;
+}
+
+header .nav1 .myButton1 {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton1:hover {
+    background-color: white;
+    color: black;
+}
+
+header .nav1 .myButton {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+header .nav1 .myButton:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 55px;
+    color: white;
+
+}
+/* End of navbar1 style */
+
+#customAlert {
+    margin: 41px 0 10px 0;
+    padding: 0 0 0 10px;
+    border: 1px solid #d2d1db;
+    color: #2f66a1;
+    background-color: #cce5ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#customAlert p {
+    margin: 12px 0px;
+}
+
+#customAlert button {
+    margin: auto 0px;
+    background: none;
+    border: none;
+}
+
+
+#vote-con{
+    margin: 100px auto 0 auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+.question-polldate{
+    flex-direction: column;
+    display: flex;
+}
+.status-enddate{
+    color: #918181;
+    font-size: 22px;
+    padding: 26px 26px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #333;
+}
+
+.option {
+    margin: 15px 0;
+}
+
+label {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #555;
+}
+
+.vote-button {
+    margin-top: 30px;
+}
+.vote-button span{
+    font-size: 25px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#msgOwner{
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#login-vote{
+    color: #ff0000c2;
+    text-decoration: underline;
+}
+
+@media(max-width:768px) {
+
+
+
+    .burger-icon {
+        margin-right: 15px;
+        margin-left: 800px;
+        display: block;
+    }
+
+    .nav1 {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav1.active {
+        /* right: 300px; */
+        min-height: 320px;
+        right: 277px;
+        background-color: rgb(0 0 0 / 90%);
+        display: flex;
+        position: relative;
+        top: 241px;
+    }
+    header .nav1 .myButton1, header .nav1 .myButton {
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px solid white;
+        padding: 10px 100px;
+        font-size: 34px;
+    }
+
+
+
+
+
+    header{
+        max-height: 135px;
+    }
+    #vote-con{
+        min-height: 850px;
+        width: 90%;
+    }
+
+    .status-enddate{
+        font-size: 30px;
+    }
+    form div.option label{
+        font-size: 32px;
+    }
+    input[type="submit"] {
+        font-size: 29px;
+    }
+
+    .vote-button input{
+        font-size: 25px;
+    }
+    .vote-button span{
+        font-size: 30px;
+    }
+    #msgOwner{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:500px) {
+    header{
+        max-height: 150px;
+    }
+    header .nav1 {
+        font-size: 40px;
+    }
+    .nav1.active {
+        top: 250px;
+    }
+    #vote-con{
+        min-height: 900px;
+        width: 90%;
+        margin: 150px auto 0 auto;
+    }
+
+    .status-enddate{
+        font-size: 25px;
+    }
+    .status-enddate span{
+        font-size: 40px;
+    }
+    form div.option label{
+        font-size: 40px;
+    }
+
+    .vote-button input{
+        font-size: 30px;
+    }
+    .vote-button span{
+        font-size: 40px;
+    }
+
+    #msgOwner{
+        font-size: 26px;
+    }
+}
