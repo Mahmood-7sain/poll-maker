@@ -1,49 +1,42 @@
-# Project Title
+# Poll Maker
 
-This is an online responsive poll maker website which help users to register and create polls. 
+An online poll-making website where users can view, create, and vote on available polls.
 
+### 1. Website requirements
 
-## Project Theme
-
-Poll is a process in which a large number of people are asked for their opinions about a subject or person. 
-There are many popular websites that let’s people make their own personal poll such as stawpoll.com, poll-maker.com, doodle.com, etc. 
-The aim of this project is to build simple poll maker website with only 1 type of question (MultipleChoice).
-## The main functionalities of the system
-### 1. Website design requirements
-
-- We used HTML/CSS/Media Query to create a responsive website. No Bootstrap or any readymade code used.
-- It is an attractive looking and unified website in all pages.
-- WE DIDN'T USE READY MADE TEMPLATES or FRAMEWORK as the aim of this project is to learn web designing from scratch.
+- HTML/CSS/Media Query was used to design and create a responsive website.
+- JavaScript was used for client-side authentication and interactivity.
+- The backend was written using PHP.
+- phpMyAdmin was used for storing data.
 
 ### 2. Registration and Login
 
-**Users can register themselves with (Name, Unique Email and Strong password) to the system.**
-- It is validated using regular expressions on the sever, client side – no built-in validation in HTML5 is used for training purposes.
-- The errors are displayed on the same page, and the inputs are re-inserted in the input fields.
-- Use 1 AJAX to verify if email is already taken or not.
+**Users can register themselves with (Name, Unique Email, and Strong password) to the system.**
+- It is validated using regular expressions on the server and client side.
+- AJAX was used to verify if the email was already taken or not.
 
-**Users can login to the system (authorization) using Email and Password.**
+**Users can log in to the system (authorization) using Email and Password.**
 
 
-### 3.Participations
+### 3. Participants
 
-**All users can browse active-polls and deactive-polls. For deactive polls only, user can view the results only.**
+**All users can browse active polls and inactive polls. For inactive polls only, users can view the results only.**
 
-**Pubic Guests can only browse all Polls, select polls and view results of polls if deactive but they can’t vote.**
+**Public Guests can only browse polls and are not allowed to vote.**
 
 **Registered Users can:**
 
-- Browse available polls, select poll, vote and view results of votes.
-- Only one vote is allowed per user for each poll. No Edit is allowed for voted poll.
-- Create new poll as follows:
+- Browse available polls, select polls, vote, and view results of votes.
+- Only one vote is allowed per user for each poll. No Edit is allowed for already voted on polls.
+- Create a new poll as follows:
 - Title/Question
 - Define 2 options or more
 - End Poll can be done as follows:
-- Either by explicitly clicking on STOP button by the
-owner
-- Or by Scheduled End Date.
-** One of these should be selected by the creator.
+- Either by explicitly clicking on the STOP button by the owner or by Scheduled End Date.
+
 ## 🛠 Skills
 - HTML, CSS, PHP, JavaScript, DATABASE, Debugging
 - Teamwork, Communication, Troubleshooting
 
+#### Contribution
+This project was created for a university web development course. I contributed mostly to the backend development of the website and database configuration and management.
